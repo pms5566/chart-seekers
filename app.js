@@ -27,14 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
         link.addEventListener('click', closeDrawer);
     });
 
-    // 2. Portal Card Tabs Mockup
-    const loginTabs = document.querySelectorAll('.login-tab');
-    loginTabs.forEach(tab => {
-        tab.addEventListener('click', () => {
-            loginTabs.forEach(t => t.classList.remove('active'));
-            tab.classList.add('active');
-        });
-    });
 
     // 3. Interactive Solutions Accordion Stack
     const solutionCards = document.querySelectorAll('.solution-accordion-card');

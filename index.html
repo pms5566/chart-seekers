@@ -41,7 +41,7 @@
             </nav>
 
             <div class="header-action">
-                <a href="#portal" class="btn btn-sm btn-lime">Portal Login</a>
+                <a href="#contact" class="btn btn-sm btn-lime">Subscribe</a>
             </div>
             
             <button class="mobile-menu-toggle" aria-label="Toggle Menu">
@@ -112,57 +112,18 @@
                     </div>
                 </div>
                 
-                <!-- Right Column (Analyst Mockup & Portal) -->
-                <div class="hero-right-card" id="portal">
-                    <div class="portal-image-overlay">
-                        <!-- SVGs Analyst Graphic -->
-                        <svg viewBox="0 0 200 240" class="analyst-vector">
-                            <rect x="20" y="40" width="160" height="200" rx="80" fill="#0B3E30" opacity="0.4"/>
-                            <!-- Head outline -->
-                            <circle cx="100" cy="110" r="32" fill="#EBF7F4"/>
-                            <!-- Suit shoulders -->
-                            <path d="M60 200c0-20 18-35 40-35s40 15 40 35v40H60v-40z" fill="#0D4B3A"/>
-                            <!-- Tie -->
-                            <path d="M96 165l4 35 4-35z" fill="#C5E063"/>
+                <!-- Right Column (Large Company Logo) -->
+                <div class="hero-right-card logo-display-container">
+                    <div class="large-logo-wrapper">
+                        <svg viewBox="0 0 160 160" width="160" height="160" class="hero-large-logo" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <!-- Outer Shield -->
+                            <path d="M80 15L25 38v45c0 30 23 55 55 59 32-4 55-29 55-59V38L80 15z" stroke="var(--accent-lime)" stroke-width="4.5"/>
+                            <!-- Chart Bar Lines / Inside Grid -->
+                            <path d="M55 75h50M55 90h50M55 60h50" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+                            <!-- Bold Premium Checkmark -->
+                            <path d="M52 76l18 18 38-38" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                    </div>
-                    
-                    <!-- Research Login Card -->
-                    <div class="login-card">
-                        <span class="login-logo"><i class="ph ph-shield-check"></i> CHART SEEKERS</span>
-                        <h3 class="login-title">Research Portal</h3>
-                        
-                        <div class="login-tabs">
-                            <button class="login-tab active" data-type="personal">Personal Research</button>
-                            <button class="login-tab" data-type="corporate">Corporate Portal</button>
-                        </div>
-                        
-                        <form class="login-form" onsubmit="event.preventDefault();">
-                            <div class="form-group">
-                                <label for="userId">User ID</label>
-                                <input type="text" id="userId" placeholder="ID, Email or phone number" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="userPassword">Password</label>
-                                <input type="password" id="userPassword" placeholder="Enter password" required>
-                            </div>
-                            
-                            <div class="form-actions-row">
-                                <label class="remember-me">
-                                    <input type="checkbox"> Remember Me
-                                </label>
-                                <a href="#" class="forgot-link">Forgot ID or password?</a>
-                            </div>
-                            
-                            <button type="submit" class="btn btn-lime btn-full">Sign In</button>
-                            
-                            <div class="divider-or"><span>or</span></div>
-                            
-                            <button type="button" class="btn btn-outline btn-full btn-google">
-                                <i class="ph ph-google-logo"></i> Continue with Google
-                            </button>
-                        </form>
+                        <span class="hero-logo-brand-text">CHART SEEKERS</span>
                     </div>
                 </div>
                 
