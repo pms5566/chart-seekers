@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chart Seekers — SEBI Registered Research Analyst</title>
+    <title>Chart Seekers — Premium Research Analyst</title>
     <meta name="description" content="Institutional-grade market research across Equity, Commodity, and Crypto markets. SEBI Registered Research Analyst (Pending).">
     
     <!-- Google Fonts: Inter & DM Sans -->
@@ -22,22 +22,26 @@
     <header class="main-header">
         <div class="header-container">
             <a href="#" class="logo-link">
+                <svg viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" class="logo-shield">
+                    <path d="M16 2L4 7v10c0 6.6 5.1 12.2 12 13 6.9-.8 12-6.4 12-13V7L16 2z" stroke="#C5E063"/>
+                    <path d="M9 14.5l5 5 9-9" stroke="#FFFFFF"/>
+                </svg>
                 <span class="logo-text">C<span class="logo-divider">|</span>S</span>
                 <span class="logo-brand">CHART SEEKERS</span>
             </a>
             
             <nav class="desktop-nav">
                 <ul>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#expertise" class="nav-link">Expertise</a></li>
-                    <li><a href="#solutions" class="nav-link">Solutions</a></li>
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+                    <li><a href="#solutions" class="nav-link">Services</a></li>
+                    <li><a href="#calculator" class="nav-link">Risk Tools</a></li>
                     <li><a href="#team" class="nav-link">Team</a></li>
                     <li><a href="#faq" class="nav-link">FAQs</a></li>
                 </ul>
             </nav>
 
             <div class="header-action">
-                <a href="#contact" class="btn btn-sm btn-outline">Portal Login</a>
+                <a href="#portal" class="btn btn-sm btn-lime">Portal Login</a>
             </div>
             
             <button class="mobile-menu-toggle" aria-label="Toggle Menu">
@@ -58,9 +62,9 @@
         </div>
         <nav class="drawer-nav">
             <ul>
-                <li><a href="#about" class="drawer-link">About</a></li>
-                <li><a href="#expertise" class="drawer-link">Expertise</a></li>
-                <li><a href="#solutions" class="drawer-link">Solutions</a></li>
+                <li><a href="#about" class="drawer-link">About Us</a></li>
+                <li><a href="#solutions" class="drawer-link">Services</a></li>
+                <li><a href="#calculator" class="drawer-link">Risk Tools</a></li>
                 <li><a href="#team" class="drawer-link">Team</a></li>
                 <li><a href="#faq" class="drawer-link">FAQs</a></li>
             </ul>
@@ -69,356 +73,326 @@
     
     <div class="drawer-backdrop" id="drawerBackdrop"></div>
 
-    <!-- Hero Section -->
+    <!-- Hero Section (Split block with rounded container) -->
     <section class="hero-section">
-        <div class="hero-container">
-            <div class="hero-badge">
-                <i class="ph ph-shield-check"></i> SEBI Registered RA (Pending)
-            </div>
-            <h1 class="hero-headline">Helping traders navigate &amp; grow while <span class="highlight-text">staying compliant.</span></h1>
-            <p class="hero-subline">Institutional-grade research and analysis covering Equity &middot; Commodity &middot; Crypto assets.</p>
-            
-            <div class="hero-ctas">
-                <a href="#contact" class="btn btn-primary">
-                    Follow Our Research <i class="ph ph-arrow-right"></i>
-                </a>
-                <a href="#solutions" class="btn btn-outline">
-                    Explore Solutions
-                </a>
-            </div>
-
-            <!-- Hero Asset Cards -->
-            <div class="hero-cards-grid">
-                <div class="hero-card">
-                    <div class="card-icon-wrapper">
-                        <i class="ph ph-presentation-chart"></i>
+        <div class="hero-rounded-container">
+            <div class="hero-split-grid">
+                
+                <!-- Left Column (Green Box) -->
+                <div class="hero-left-card">
+                    <div class="hero-badge">
+                        <i class="ph ph-sparkle"></i> STRATEGIC CAPITAL SOLUTIONS
                     </div>
-                    <h3 class="hero-card-title">Equity Research</h3>
-                    <p class="hero-card-desc">Comprehensive analysis of index dynamics, sector shifts, and high-conviction growth stocks.</p>
+                    
+                    <h1 class="hero-headline">Institutional-Grade Research.<br>Got by Power.</h1>
+                    
+                    <p class="hero-subline">
+                        Chart Seekers bridges the gap between raw market data and high-conviction execution. We provide high-velocity technical reports and risk management systems.
+                    </p>
+                    
+                    <div class="hero-ctas">
+                        <a href="#solutions" class="btn btn-lime btn-pill">
+                            Speak with a Partner <i class="ph ph-arrow-up-right"></i>
+                        </a>
+                        <button class="play-btn" aria-label="Watch Video Overview">
+                            <span class="play-icon-circle"><i class="ph ph-play"></i></span>
+                        </button>
+                    </div>
+                    
+                    <!-- Overlapping Testimonial Bubbles -->
+                    <div class="testimonial-bar">
+                        <div class="avatar-group">
+                            <div class="avatar">AS</div>
+                            <div class="avatar">MP</div>
+                            <div class="avatar">RD</div>
+                            <div class="avatar">SJ</div>
+                            <div class="avatar-count">5K+</div>
+                        </div>
+                        <span class="testimonial-text">Over 5,000+ Verified Professional Subscribers</span>
+                    </div>
                 </div>
                 
-                <div class="hero-card">
-                    <div class="card-icon-wrapper">
-                        <i class="ph ph-drop"></i>
+                <!-- Right Column (Analyst Mockup & Portal) -->
+                <div class="hero-right-card" id="portal">
+                    <div class="portal-image-overlay">
+                        <!-- SVGs Analyst Graphic -->
+                        <svg viewBox="0 0 200 240" class="analyst-vector">
+                            <rect x="20" y="40" width="160" height="200" rx="80" fill="#0B3E30" opacity="0.4"/>
+                            <!-- Head outline -->
+                            <circle cx="100" cy="110" r="32" fill="#EBF7F4"/>
+                            <!-- Suit shoulders -->
+                            <path d="M60 200c0-20 18-35 40-35s40 15 40 35v40H60v-40z" fill="#0D4B3A"/>
+                            <!-- Tie -->
+                            <path d="M96 165l4 35 4-35z" fill="#C5E063"/>
+                        </svg>
                     </div>
-                    <h3 class="hero-card-title">Commodity Markets</h3>
-                    <p class="hero-card-desc">Volume profile modeling and structural analysis across gold, crude oil, and base metals.</p>
+                    
+                    <!-- Research Login Card -->
+                    <div class="login-card">
+                        <span class="login-logo"><i class="ph ph-shield-check"></i> CHART SEEKERS</span>
+                        <h3 class="login-title">Research Portal</h3>
+                        
+                        <div class="login-tabs">
+                            <button class="login-tab active" data-type="personal">Personal Research</button>
+                            <button class="login-tab" data-type="corporate">Corporate Portal</button>
+                        </div>
+                        
+                        <form class="login-form" onsubmit="event.preventDefault();">
+                            <div class="form-group">
+                                <label for="userId">User ID</label>
+                                <input type="text" id="userId" placeholder="ID, Email or phone number" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="userPassword">Password</label>
+                                <input type="password" id="userPassword" placeholder="Enter password" required>
+                            </div>
+                            
+                            <div class="form-actions-row">
+                                <label class="remember-me">
+                                    <input type="checkbox"> Remember Me
+                                </label>
+                                <a href="#" class="forgot-link">Forgot ID or password?</a>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-lime btn-full">Sign In</button>
+                            
+                            <div class="divider-or"><span>or</span></div>
+                            
+                            <button type="button" class="btn btn-outline btn-full btn-google">
+                                <i class="ph ph-google-logo"></i> Continue with Google
+                            </button>
+                        </form>
+                    </div>
                 </div>
                 
-                <div class="hero-card">
-                    <div class="card-icon-wrapper">
-                        <i class="ph ph-currency-btc"></i>
-                    </div>
-                    <h3 class="hero-card-title">Digital Assets</h3>
-                    <p class="hero-card-desc">Liquidity sweep tracking and order block analysis on major crypto indices.</p>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- Expertise Section -->
-    <section id="expertise" class="expertise-section">
-        <div class="section-container grid-split">
-            <div class="expertise-left">
-                <span class="section-badge">Proven Competency</span>
-                <h2 class="section-heading">Established expertise across <span class="highlight-text">three markets.</span></h2>
-                <p class="expertise-desc">
-                    Chart Seekers delivers highly analytical, research-driven reports based on structure rather than speculation. We serve professional traders and retail portfolios looking for institutional rigour.
+    <!-- Services / Solutions Section (Split block with interactive accordion list) -->
+    <section id="solutions" class="solutions-section">
+        <div class="section-container grid-split-solutions">
+            
+            <!-- Left Column: Details -->
+            <div class="solutions-left">
+                <span class="section-badge">INTEGRATED MERCHANT INFRASTRUCTURE</span>
+                <h2 class="section-heading">Financial Rails for Global Expansion</h2>
+                <p class="solutions-desc">
+                    Chart Seekers provides the enterprise-grade technical architecture and compliance framework required to navigate complex global capital markets.
                 </p>
                 
-                <div class="stats-list">
-                    <div class="stat-item">
-                        <span class="stat-number">2020</span>
-                        <span class="stat-label">Founded</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">10K+</span>
-                        <span class="stat-label">Active subscribers</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">94%</span>
-                        <span class="stat-label">Compliance alignment</span>
-                    </div>
-                </div>
+                <ul class="bullet-checklist">
+                    <li><i class="ph ph-check-circle"></i> Cross-Asset Market Structure</li>
+                    <li><i class="ph ph-check-circle"></i> Unified Volume Profiling</li>
+                    <li><i class="ph ph-check-circle"></i> Institutional Security Guidelines</li>
+                </ul>
+                
+                <a href="#calculator" class="btn btn-primary btn-pill">Get Started <i class="ph ph-arrow-up-right"></i></a>
             </div>
             
-            <div class="expertise-right">
-                <!-- SVG Vector mockup representing market insights -->
-                <div class="vector-mockup">
-                    <svg viewBox="0 0 400 300" width="100%" height="100%" class="svg-map">
-                        <rect x="10" y="10" width="380" height="280" rx="6" fill="#FFFFFF" stroke="#E9ECEF" stroke-width="1"/>
-                        <circle cx="200" cy="150" r="80" fill="none" stroke="#E9ECEF" stroke-width="1" stroke-dasharray="4"/>
-                        <circle cx="200" cy="150" r="120" fill="none" stroke="#E9ECEF" stroke-width="1" stroke-dasharray="4"/>
-                        
-                        <!-- Connecting lines -->
-                        <line x1="200" y1="150" x2="80" y2="80" stroke="#0E5A44" stroke-width="1.5" stroke-dasharray="4"/>
-                        <line x1="200" y1="150" x2="310" y2="100" stroke="#0E5A44" stroke-width="1.5" stroke-dasharray="4"/>
-                        <line x1="200" y1="150" x2="240" y2="240" stroke="#0E5A44" stroke-width="1.5" stroke-dasharray="4"/>
-
-                        <!-- Center Node -->
-                        <circle cx="200" cy="150" r="16" fill="#0E5A44"/>
-                        <circle cx="200" cy="150" r="6" fill="#FFFFFF"/>
-                        
-                        <!-- Market Nodes -->
-                        <!-- Node 1: Equity -->
-                        <circle cx="80" cy="80" r="12" fill="#EBF7F4"/>
-                        <circle cx="80" cy="80" r="6" fill="#0E5A44"/>
-                        <text x="80" y="62" font-family="'Inter', sans-serif" font-size="10" font-weight="600" fill="#111111" text-anchor="middle">EQUITIES</text>
-                        
-                        <!-- Node 2: Commodity -->
-                        <circle cx="310" cy="100" r="12" fill="#EBF7F4"/>
-                        <circle cx="310" cy="100" r="6" fill="#0E5A44"/>
-                        <text x="310" y="82" font-family="'Inter', sans-serif" font-size="10" font-weight="600" fill="#111111" text-anchor="middle">COMMODITIES</text>
-                        
-                        <!-- Node 3: Crypto -->
-                        <circle cx="240" cy="240" r="12" fill="#EBF7F4"/>
-                        <circle cx="240" cy="240" r="6" fill="#0E5A44"/>
-                        <text x="240" y="262" font-family="'Inter', sans-serif" font-size="10" font-weight="600" fill="#111111" text-anchor="middle">DIGITAL ASSETS</text>
-                    </svg>
+            <!-- Right Column: Interactive Accordion Row Stack -->
+            <div class="solutions-accordion-stack">
+                
+                <!-- Accordion Card 1 (Active by default) -->
+                <div class="solution-accordion-card active" data-index="0">
+                    <div class="card-header">
+                        <div class="header-title-row">
+                            <i class="ph ph-presentation-chart"></i>
+                            <h3>Technical Research Reports</h3>
+                        </div>
+                        <span class="card-arrow-circle"><i class="ph ph-arrow-up-right"></i></span>
+                    </div>
+                    <div class="card-body">
+                        <p>Weekly structural deep-dives covering index volume flows, high-probability setups, and sector rotations. Fully mapped parameters based on market design frameworks.</p>
+                    </div>
                 </div>
+                
+                <!-- Accordion Card 2 -->
+                <div class="solution-accordion-card" data-index="1">
+                    <div class="card-header">
+                        <div class="header-title-row">
+                            <i class="ph ph-drop"></i>
+                            <h3>Strategic Liquidity Management</h3>
+                        </div>
+                        <span class="card-arrow-circle"><i class="ph ph-arrow-up-right"></i></span>
+                    </div>
+                    <div class="card-body">
+                        <p>Intraday volume profile tracking and institutional level identification. We map where liquidity blocks congregate to help you manage risk cycles.</p>
+                    </div>
+                </div>
+                
+                <!-- Accordion Card 3 -->
+                <div class="solution-accordion-card" data-index="2">
+                    <div class="card-header">
+                        <div class="header-title-row">
+                            <i class="ph ph-shield-check"></i>
+                            <h3>Risk &amp; Compliance Architecture</h3>
+                        </div>
+                        <span class="card-arrow-circle"><i class="ph ph-arrow-up-right"></i></span>
+                    </div>
+                    <div class="card-body">
+                        <p>Strict SEBI guideline alignment across all materials, ensuring audit-ready reporting, transparency of disclosures, and absolute data compliance.</p>
+                    </div>
+                </div>
+                
+                <!-- Accordion Card 4 -->
+                <div class="solution-accordion-card" data-index="3">
+                    <div class="card-header">
+                        <div class="header-title-row">
+                            <i class="ph ph-terminal"></i>
+                            <h3>Traders Live Sandbox</h3>
+                        </div>
+                        <span class="card-arrow-circle"><i class="ph ph-arrow-up-right"></i></span>
+                    </div>
+                    <div class="card-body">
+                        <p>Interactive simulator backtesting libraries, spreadsheet dashboards, and real-time risk calculators to model setups under macro volatility.</p>
+                    </div>
+                </div>
+                
             </div>
+            
         </div>
     </section>
 
-    <!-- Solutions Section -->
-    <section id="solutions" class="solutions-section">
+    <div class="section-divider"></div>
+
+    <!-- Position Sizing Risk Calculator Tool Section -->
+    <section id="calculator" class="calculator-section">
         <div class="section-container">
             <div class="centered-intro">
-                <span class="section-badge">Solutions</span>
-                <h2 class="section-heading centered">Three complementary solutions.<br>One <span class="highlight-text">strategic partner.</span></h2>
+                <span class="section-badge">RISK MANAGEMENT SYSTEM</span>
+                <h2 class="section-heading centered">Precision Tools for Your Financial Roadmap</h2>
+                <p class="calculator-lead">Manage capital allocation with institutional rigor. Calculate position sizes dynamically based on stop losses.</p>
             </div>
             
-            <!-- Tabs Menu -->
-            <div class="solutions-tabs">
-                <button class="tab-btn active" data-tab="tab-reports">
-                    <i class="ph ph-file-text"></i> Technical Reports
-                </button>
-                <button class="tab-btn" data-tab="tab-insights">
-                    <i class="ph ph-lightbulb"></i> Market Insights
-                </button>
-                <button class="tab-btn" data-tab="tab-sandbox">
-                    <i class="ph ph-terminal"></i> Sandbox &amp; Live
-                </button>
-            </div>
-            
-            <!-- Tabs Content -->
-            <div class="tab-content-container">
-                <!-- Tab 1 -->
-                <div class="tab-content-item active" id="tab-reports">
-                    <div class="tab-grid">
-                        <div class="tab-left">
-                            <h3 class="tab-item-title">Technical Research Reports</h3>
-                            <p class="tab-item-desc">High-conviction, professional-grade technical analysis reports delivered directly to your portal. We focus on macro patterns, liquidity models, and cycle shifts.</p>
-                            
-                            <ul class="checkmark-list">
-                                <li><i class="ph ph-check-circle"></i> Weekly Nifty &amp; Sector Trend Analysis</li>
-                                <li><i class="ph ph-check-circle"></i> Institutional Volume Profiling</li>
-                                <li><i class="ph ph-check-circle"></i> Specific Breakout &amp; Breakdown Setups</li>
-                                <li><i class="ph ph-check-circle"></i> 100% compliant with SEBI guidelines</li>
-                            </ul>
-                            
-                            <a href="#contact" class="btn btn-primary">Subscribe to Reports <i class="ph ph-arrow-right"></i></a>
+            <div class="calculator-split-grid">
+                
+                <!-- Left Column (Dark Green Result Card) -->
+                <div class="calc-result-card">
+                    <h3 class="calc-result-title">Risk Parameters</h3>
+                    
+                    <div class="calc-stat-group">
+                        <span class="calc-stat-label">Maximum Capital at Risk</span>
+                        <span class="calc-stat-value" id="valCapitalRisk">$1,000.00</span>
+                    </div>
+                    
+                    <div class="calc-stat-group">
+                        <span class="calc-stat-label">Recommended Position Size</span>
+                        <span class="calc-stat-value" id="valPosSize">$50,000.00</span>
+                    </div>
+                    
+                    <a href="#contact" class="btn btn-lime btn-full btn-pill">Apply Setup <i class="ph ph-arrow-right"></i></a>
+                </div>
+                
+                <!-- Right Column (Sliders) -->
+                <div class="calc-inputs-card">
+                    <div class="input-slider-group">
+                        <div class="slider-header">
+                            <span class="slider-label">Account Capital</span>
+                            <span class="slider-display-val" id="dispCapital">$100,000</span>
                         </div>
-                        <div class="tab-right">
-                            <div class="mockup-display">
-                                <div class="mockup-header">
-                                    <span class="mockup-dot"></span>
-                                    <span class="mockup-dot"></span>
-                                    <span class="mockup-dot"></span>
-                                </div>
-                                <div class="mockup-body">
-                                    <div class="mock-chart-line"></div>
-                                    <div class="mock-chart-bar-group">
-                                        <div class="mock-bar" style="height: 40%"></div>
-                                        <div class="mock-bar" style="height: 65%"></div>
-                                        <div class="mock-bar" style="height: 50%"></div>
-                                        <div class="mock-bar" style="height: 85%"></div>
-                                    </div>
-                                </div>
-                            </div>
+                        <input type="range" id="inputCapital" min="5000" max="1000000" step="5000" value="100000">
+                    </div>
+                    
+                    <div class="input-slider-group">
+                        <div class="slider-header">
+                            <span class="slider-label">Risk Percentage</span>
+                            <span class="slider-display-val" id="dispRisk">1%</span>
                         </div>
+                        <input type="range" id="inputRisk" min="0.25" max="5.0" step="0.25" value="1">
+                    </div>
+                    
+                    <div class="input-slider-group">
+                        <div class="slider-header">
+                            <span class="slider-label">Stop Loss Percentage</span>
+                            <span class="slider-display-val" id="dispStopLoss">2%</span>
+                        </div>
+                        <input type="range" id="inputStopLoss" min="0.5" max="15.0" step="0.5" value="2">
                     </div>
                 </div>
                 
-                <!-- Tab 2 -->
-                <div class="tab-content-item" id="tab-insights">
-                    <div class="tab-grid">
-                        <div class="tab-left">
-                            <h3 class="tab-item-title">Real-Time Market Insights</h3>
-                            <p class="tab-item-desc">Stay ahead of volatility with daily market briefs. Our alerts focus strictly on key support/resistance levels, sweep setups, and macroeconomic triggers.</p>
-                            
-                            <ul class="checkmark-list">
-                                <li><i class="ph ph-check-circle"></i> Morning pre-market briefings</li>
-                                <li><i class="ph ph-check-circle"></i> Live trade-plan updates via Telegram</li>
-                                <li><i class="ph ph-check-circle"></i> Quantitative risk mitigation signals</li>
-                                <li><i class="ph ph-check-circle"></i> Clear explanation of methodology</li>
-                            </ul>
-                            
-                            <a href="#contact" class="btn btn-primary">Access Insights <i class="ph ph-arrow-right"></i></a>
-                        </div>
-                        <div class="tab-right">
-                            <div class="mockup-display">
-                                <div class="mockup-header">
-                                    <span class="mockup-dot"></span>
-                                    <span class="mockup-dot"></span>
-                                    <span class="mockup-dot"></span>
-                                </div>
-                                <div class="mockup-body">
-                                    <div class="mock-feed">
-                                        <div class="mock-feed-item">
-                                            <div class="mock-feed-dot"></div>
-                                            <div class="mock-feed-lines">
-                                                <div class="mock-line-long"></div>
-                                                <div class="mock-line-short"></div>
-                                            </div>
-                                        </div>
-                                        <div class="mock-feed-item">
-                                            <div class="mock-feed-dot"></div>
-                                            <div class="mock-feed-lines">
-                                                <div class="mock-line-long"></div>
-                                                <div class="mock-line-short"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Tab 3 -->
-                <div class="tab-content-item" id="tab-sandbox">
-                    <div class="tab-grid">
-                        <div class="tab-left">
-                            <h3 class="tab-item-title">Traders Sandbox &amp; Live</h3>
-                            <p class="tab-item-desc">Learn while you observe. Participate in interactive live sessions where we dissect live charts using our proprietary volume profile and order block indicators.</p>
-                            
-                            <ul class="checkmark-list">
-                                <li><i class="ph ph-check-circle"></i> Bi-weekly live interactive webinars</li>
-                                <li><i class="ph ph-check-circle"></i> Risk-calculator sandbox tool access</li>
-                                <li><i class="ph ph-check-circle"></i> Detailed backtesting spreadsheet libraries</li>
-                                <li><i class="ph ph-check-circle"></i> Professional Q&amp;A sessions</li>
-                            </ul>
-                            
-                            <a href="#contact" class="btn btn-primary">Open Sandbox <i class="ph ph-arrow-right"></i></a>
-                        </div>
-                        <div class="tab-right">
-                            <div class="mockup-display">
-                                <div class="mockup-header">
-                                    <span class="mockup-dot"></span>
-                                    <span class="mockup-dot"></span>
-                                    <span class="mockup-dot"></span>
-                                </div>
-                                <div class="mockup-body">
-                                    <div class="mock-terminal">
-                                        <div class="mock-terminal-line">> Initializing sandbox environment...</div>
-                                        <div class="mock-terminal-line">> Loading risk profile: Balanced</div>
-                                        <div class="mock-terminal-line">> Maximum position size calculated: 2.5%</div>
-                                        <div class="mock-terminal-line" style="color:#0E5A44">> Ready. Close all speculation doors.</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
+
+    <!-- Founding Director Quote Section -->
+    <section class="director-quote-section">
+        <div class="section-container split-quote-grid">
+            <!-- Left Column: Quote Block -->
+            <div class="quote-card-container">
+                <div class="quote-card-dark">
+                    <span class="quote-mark">&#8220;</span>
+                    <p class="quote-text">
+                        We believe that true partnership is forged in the charts. Our mission is to provide more than just indicators—we provide the stability, frameworks, and institutional discipline that allow our clients to redefine what is possible in modern financial markets.
+                    </p>
+                    
+                    <div class="director-meta">
+                        <span class="director-name">Aarav Sharma</span>
+                        <span class="director-title">Founding Director &amp; Lead Analyst</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Column: Avatar/Profile -->
+            <div class="director-image-container">
+                <!-- SVG Director Vector Profile Portrait -->
+                <svg viewBox="0 0 300 360" class="director-vector">
+                    <rect width="300" height="360" rx="8" fill="#F9F9F8" stroke="#E9ECEF" stroke-width="1"/>
+                    <rect x="30" y="30" width="240" height="300" rx="4" fill="#0B3E30"/>
+                    <circle cx="150" cy="150" r="48" fill="#EBF7F4"/>
+                    <path d="M90 280c0-30 27-50 60-50s60 20 60 50v50H90v-50z" fill="#C5E063"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
 
     <!-- Team Section -->
     <section id="team" class="team-section">
         <div class="section-container">
             <div class="centered-intro">
-                <span class="section-badge">Expertise</span>
-                <h2 class="section-heading centered">Led by <span class="highlight-text">industry veterans.</span></h2>
-                <p class="team-lead">Our analysts combine decades of market chart studies to deliver compliant, structured, and factual research.</p>
+                <span class="section-badge">Our Team</span>
+                <h2 class="section-heading centered">Led by industry veterans.</h2>
+                <p class="team-lead">Our analysts coordinate research across asset classes to ensure regulatory alignment and data credibility.</p>
             </div>
             
             <div class="team-grid">
                 <!-- Team Member 1 -->
                 <div class="team-card">
-                    <div class="team-avatar-wrapper">
-                        <div class="team-avatar">AS</div>
-                    </div>
+                    <div class="team-avatar">AS</div>
                     <h3 class="team-name">Aarav Sharma</h3>
-                    <p class="team-role">Lead Equity Analyst</p>
-                    <p class="team-bio">12+ years tracking Indian equity markets. Expert in price action and volume profiles.</p>
+                    <p class="team-role">Founding Director</p>
+                    <p class="team-bio">12+ years charting equities. Expert in institutional volume profile frameworks.</p>
                     <a href="https://linkedin.com" target="_blank" class="team-social"><i class="ph ph-linkedin-logo"></i> LinkedIn</a>
                 </div>
                 
                 <!-- Team Member 2 -->
                 <div class="team-card">
-                    <div class="team-avatar-wrapper">
-                        <div class="team-avatar">MP</div>
-                    </div>
+                    <div class="team-avatar">MP</div>
                     <h3 class="team-name">Meera Patel</h3>
                     <p class="team-role">Commodity Strategist</p>
-                    <p class="team-bio">Former corporate treasury analyst. Specializes in precious metals cycle studies.</p>
+                    <p class="team-bio">Cycles and macro structures researcher. Covers precious metals and energy assets.</p>
                     <a href="https://linkedin.com" target="_blank" class="team-social"><i class="ph ph-linkedin-logo"></i> LinkedIn</a>
                 </div>
                 
                 <!-- Team Member 3 -->
                 <div class="team-card">
-                    <div class="team-avatar-wrapper">
-                        <div class="team-avatar">RD</div>
-                    </div>
+                    <div class="team-avatar">RD</div>
                     <h3 class="team-name">Rohan Das</h3>
-                    <p class="team-role">Digital Asset Researcher</p>
-                    <p class="team-bio">Quant analyst mapping exchange flows, block orders, and crypto indices.</p>
+                    <p class="team-role">Crypto Researcher</p>
+                    <p class="team-bio">Identifies structural order block sweeps and exchange liquidity pool levels.</p>
                     <a href="https://linkedin.com" target="_blank" class="team-social"><i class="ph ph-linkedin-logo"></i> LinkedIn</a>
                 </div>
                 
                 <!-- Team Member 4 -->
                 <div class="team-card">
-                    <div class="team-avatar-wrapper">
-                        <div class="team-avatar">SJ</div>
-                    </div>
+                    <div class="team-avatar">SJ</div>
                     <h3 class="team-name">Sarah Jenkins</h3>
                     <p class="team-role">Compliance Officer</p>
-                    <p class="team-bio">Ensures all reports strictly adhere to SEBI guidelines and regulatory parameters.</p>
+                    <p class="team-bio">Audits all technical reports for SEBI and regulatory alignment.</p>
                     <a href="https://linkedin.com" target="_blank" class="team-social"><i class="ph ph-linkedin-logo"></i> LinkedIn</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Recent Engagements (Research Reports) Section -->
-    <section class="engagements-section">
-        <div class="section-container">
-            <div class="engagements-header">
-                <div>
-                    <span class="section-badge">Portfolio</span>
-                    <h2 class="section-heading">Recent engagements.</h2>
-                </div>
-                <div class="engagements-controls">
-                    <button class="control-btn" id="btnPrev"><i class="ph ph-arrow-left"></i></button>
-                    <button class="control-btn" id="btnNext"><i class="ph ph-arrow-right"></i></button>
-                </div>
-            </div>
-            
-            <div class="engagements-grid" id="engagementsGrid">
-                <!-- Card 1 -->
-                <div class="engagement-card">
-                    <span class="card-badge">EQUITY</span>
-                    <h3 class="engagement-title">Macro Structural Shift in Nifty 50 Index</h3>
-                    <p class="engagement-desc">Detailed document exploring institutional volume buildup at key support blocks in Indian equities.</p>
-                    <a href="#contact" class="engagement-link">Read Report <i class="ph ph-arrow-up-right"></i></a>
-                </div>
-                
-                <!-- Card 2 -->
-                <div class="engagement-card">
-                    <span class="card-badge">COMMODITY</span>
-                    <h3 class="engagement-title">Gold Breakout &amp; Volume Profile Setup</h3>
-                    <p class="engagement-desc">An analysis of gold macro cycles, inflation correlation, and structural breakout levels.</p>
-                    <a href="#contact" class="engagement-link">Read Report <i class="ph ph-arrow-up-right"></i></a>
-                </div>
-                
-                <!-- Card 3 -->
-                <div class="engagement-card">
-                    <span class="card-badge">DIGITAL ASSETS</span>
-                    <h3 class="engagement-title">Bitcoin Liquidity Sweeps Analysis</h3>
-                    <p class="engagement-desc">Visual mapping of order block sweeps, exchange liquidity pools, and major ranges.</p>
-                    <a href="#contact" class="engagement-link">Read Report <i class="ph ph-arrow-up-right"></i></a>
                 </div>
             </div>
         </div>
@@ -485,13 +459,13 @@
         <div class="section-container">
             <div class="cta-banner-card">
                 <span class="logo-text light">C<span class="logo-divider">|</span>S</span>
-                <h2 class="cta-card-title">Get started with Chart Seekers.</h2>
+                <h2 class="cta-card-title">Ready to Architect Your Financial Future?</h2>
                 <p class="cta-card-desc">Receive research-driven insights and structured analysis. Access our portal or follow our channels.</p>
                 <div class="cta-card-buttons">
-                    <a href="https://t.me/chartseekers" target="_blank" class="btn btn-primary btn-inverse">
+                    <a href="https://t.me/chartseekers" target="_blank" class="btn btn-lime btn-pill">
                         Join Telegram Feed <i class="ph ph-paper-plane-tilt"></i>
                     </a>
-                    <a href="https://x.com/chartseekers" target="_blank" class="btn btn-outline btn-inverse">
+                    <a href="https://x.com/chartseekers" target="_blank" class="btn btn-outline btn-inverse btn-pill">
                         Follow on X
                     </a>
                 </div>
